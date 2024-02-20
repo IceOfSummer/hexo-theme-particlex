@@ -15,7 +15,7 @@
 - [x] 文章目录
 - [x] 不再以个人头像为网页图标(默认加载`favicon.ico`，你可以直接将网站图标丢到`source`目录下)
 - [x] 首页不再显示文章全部内容，只会显示部分内容(v1.0.1及以上版本可用)
-- [x] 底部添加作者链接，添加`authorHome`配置即可。
+
 ## 安装
 
 ### 从Actons列表下载(推荐)
@@ -31,8 +31,15 @@ npm i
 npm run pack
 ```
 
-### 配置
-#### 关闭高亮 
+## 博客工具
+
+仓库的`tools`目录下提供了各种工具：
+
+- [replace-to-cdn.cjs](tools/replace-to-cdn.cjs)：将主题的静态资源替换为自己的CDN加载(可以极大地提高博客访问速度)。
+- [replace-old-cdn.cjs](tools/replace-old-cdn.cjs)：将博客中旧的CDN链接替换为新CDN的链接。
+
+## 配置
+### 关闭高亮 
 Hexo 有自带的代码高亮，但是和 ParticleX 的不兼容(具体表现为代码块会出现bug)
 
 ```yaml
@@ -46,10 +53,16 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
-hexo v6, v7
+# hexo v6, v7
 prismjs:
     enable: false
 ```
+
+### 底部作者链接
+```yaml
+authorHome: https://github.com/IceOfSummer
+```
+
 
 其它配置请在[ParticleX](https://github.com/argvchs/hexo-theme-particlex)中查看。
 
