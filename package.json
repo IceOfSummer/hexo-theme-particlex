@@ -5,8 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack watch --config webpack.config.dev.js --mode development",
-    "build": "webpack --mode production",
-    "pack": "node build.js"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -31,7 +30,6 @@
     "hexo-renderer-ejs": "^2.0.0"
   },
   "devDependencies": {
-    "tar": "^6.2.0",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.4.0",
     "@vue/babel-preset-jsx": "^1.4.0",
     "babel-core": "^6.26.3",

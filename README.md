@@ -24,11 +24,17 @@
 
 点击上方Actions，进入最后一次运行的Action，下载下面的文件。
 
-### 手动安装
+### 开发
+
+首先修改[webpack.config.dev.js](webpack.config.dev.js)文件中的`output.path`值为你的hexo博客主题路径。
+
+运行如下指令即可进行开发：
 ```bash
-# 克隆本项目
 npm i
-npm run pack
+npm run dev
+
+# 另开一个命令行
+hexo serve
 ```
 
 ## 博客工具
