@@ -2,7 +2,7 @@ const app = Vue.createApp({
     mixins: Object.values(mixins),
     data() {
         return {
-            loading: true,
+            loading: 2,
             showMenu: false,
             barLocal: 0,
             renderers: [],
@@ -10,14 +10,20 @@ const app = Vue.createApp({
     },
     created() {
         window.addEventListener("load", () => {
-            this.loading = false;
+            this.triggerLoadingDone()
         });
     },
     mounted() {
         window.addEventListener("scroll", this.handleScroll, true);
-        this.render();
+        this.triggerLoadingDone()
     },
     methods: {
+        triggerLoadingDone() {
+          this.loading--
+          if (this.loading === 0) {
+              this.render()
+          }
+        },
         render() {
             if (typeof this.renderers === "undefined") return;
             for (let i of this.renderers) i();

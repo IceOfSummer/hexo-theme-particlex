@@ -17,3 +17,4 @@ declare var mixins: Record<string, any>
 declare var ARTICLE_MAX_WIDTH_PX: string
 declare var ARTICLE_MAX_WIDTH: number
 declare var BACKGROUND_COLOR: string
+declare var hljs: import('highlight.js').HLJSApi
