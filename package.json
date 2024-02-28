@@ -30,6 +30,7 @@
     "hexo-renderer-ejs": "^2.0.0"
   },
   "devDependencies": {
+    "@types/highlight.js": "^10.1.0",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.4.0",
     "@vue/babel-preset-jsx": "^1.4.0",
     "babel-core": "^6.26.3",
