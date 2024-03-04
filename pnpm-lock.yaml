@@ -13,6 +13,9 @@ dependencies:
     version: 2.0.0
 
 devDependencies:
+  '@types/highlight.js':
+    specifier: ^10.1.0
+    version: 10.1.0
   '@vue/babel-helper-vue-jsx-merge-props':
     specifier: ^1.4.0
     version: registry.npmmirror.com/@vue/babel-helper-vue-jsx-merge-props@1.4.0
@@ -42,7 +45,7 @@ devDependencies:
     version: 10.3.10
   mini-css-extract-plugin:
     specifier: ^2.7.5
-    version: registry.npmmirror.com/mini-css-extract-plugin@2.7.5(webpack@5.77.0)
+    version: 2.8.1(webpack@5.77.0)
   sass:
     specifier: ^1.62.0
     version: 1.71.1
@@ -398,6 +401,13 @@ packages:
   /@trysound/sax@0.2.0:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
+    dev: true
+
+  /@types/highlight.js@10.1.0:
+    resolution: {integrity: sha512-77hF2dGBsOgnvZll1vymYiNUtqJ8cJfXPD6GG/2M0aLRc29PkvB7Au6sIDjIEFcSICBhCh2+Pyq6WSRS7LUm6A==}
+    deprecated: This is a stub types definition. highlight.js provides its own type definitions, so you do not need this installed.
+    dependencies:
+      highlight.js: 11.9.0
     dev: true
 
   /@types/istanbul-lib-coverage@2.0.4:
@@ -1269,6 +1279,11 @@ packages:
       ejs: 3.1.8
     dev: false
 
+  /highlight.js@11.9.0:
+    resolution: {integrity: sha512-fJ7cW7fQGCYAkgv4CPfwFHrfd/cLS4Hau96JuJ+ZTOWhjnhoeN1ub1tFmALm/+lW5z4WCAuAV9bm05AP0mS6Gw==}
+    engines: {node: '>=12.0.0'}
+    dev: true
+
   /icss-utils@5.1.0(postcss@8.4.35):
     resolution: {integrity: sha512-soFhflCVWLfRNOPU3iv5Z9VUdT44xFRbzjLsEzSr5AQmgqPMTHdU3PMT1Cf1ssx8fLNJDA1juftYl+PUcv3MqA==}
     engines: {node: ^10 || ^12 || >= 14}
@@ -1500,6 +1515,17 @@ packages:
     dependencies:
       braces: 3.0.2
       picomatch: 2.3.1
+    dev: true
+
+  /mini-css-extract-plugin@2.8.1(webpack@5.77.0):
+    resolution: {integrity: sha512-/1HDlyFRxWIZPI1ZpgqlZ8jMw/1Dp/dl3P0L1jtZ+zVcHqwPhGwaJwKL00WVgfnBy6PWCde9W65or7IIETImuA==}
+    engines: {node: '>= 12.13.0'}
+    peerDependencies:
+      webpack: ^5.0.0
+    dependencies:
+      schema-utils: 4.2.0
+      tapable: 2.2.1
+      webpack: registry.npmmirror.com/webpack@5.77.0(webpack-cli@5.1.4)
     dev: true
 
   /minimatch@3.1.2:
@@ -3407,19 +3433,6 @@ packages:
     engines: {node: '>= 0.6'}
     dependencies:
       mime-db: registry.npmmirror.com/mime-db@1.52.0
-    dev: true
-
-  registry.npmmirror.com/mini-css-extract-plugin@2.7.5(webpack@5.77.0):
-    resolution: {integrity: sha512-9HaR++0mlgom81s95vvNjxkg52n2b5s//3ZTI1EtzFb98awsLSivs2LMsVqnQ3ay0PVhqWcGNyDaTE961FOcjQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/mini-css-extract-plugin/-/mini-css-extract-plugin-2.7.5.tgz}
-    id: registry.npmmirror.com/mini-css-extract-plugin/2.7.5
-    name: mini-css-extract-plugin
-    version: 2.7.5
-    engines: {node: '>= 12.13.0'}
-    peerDependencies:
-      webpack: ^5.0.0
-    dependencies:
-      schema-utils: registry.npmmirror.com/schema-utils@4.0.0
-      webpack: registry.npmmirror.com/webpack@5.77.0(webpack-cli@5.1.4)
     dev: true
 
   registry.npmmirror.com/minimatch@3.1.2:
