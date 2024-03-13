@@ -1,7 +1,7 @@
 /**
  * fix #4.
  */
-hexo.extend.filter.register('before_post_render', function(data){
+hexo.extend.filter.register('after_post_render', function(data){
   if (typeof data.content === 'string') {
     const contentBuilder = []
     const content = data.content
