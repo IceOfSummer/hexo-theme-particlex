@@ -5,7 +5,6 @@ const PartialPost = Vue.defineComponent({
     content: String
   },
   setup(props) {
-    console.log(props)
     let presentContent
     let isPartialShow
     if (props.content.length >= MAX_ALLOW_LENGTH) {
