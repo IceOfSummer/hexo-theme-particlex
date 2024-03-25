@@ -502,14 +502,26 @@ body::-webkit-scrollbar-track {
     margin: 15px auto;
     max-width: 75%;
 }
-.code-copy {
-    color: #5c6b72;
+.wrap-line-btn {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+.code-block-toolbar {
+    display: flex;
+    padding: 15px;
+    align-items: center;
     position: absolute;
     right: 0;
     top: 0;
 }
+.code-copy {
+    color: #5c6b72;
+    width: 18px;
+    height: 15px;
+    margin-left: 15px;
+}
 .code-copy i {
-    padding: 15px;
     position: absolute;
     right: 0;
     top: 0;
