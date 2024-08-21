@@ -1,3 +1,5 @@
+**DEPRECATED**, new version here: [particlex](https://github.com/nextjs-particlex-theme/particlex). Build with next.js, fast that you can't image.
+
 # Hexo-Theme-ParticleX
 
 [ParticleX](https://github.com/argvchs/hexo-theme-particlex) 主题的魔改版本。原本这个仓库是从这里fork出来的，但是fork的提示太烦了，所以我把fork的仓库删了重新创建了一个
